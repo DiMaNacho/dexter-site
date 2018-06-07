@@ -7,7 +7,7 @@ body {
 }
 
 .contenedor-fluido {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -51,10 +51,10 @@ body {
 }
 
 .hero .hero-footer {
-  height: 20%;
+  height: 200px;
   position: absolute;
   width: 100%;
-  background-color: #49b9e6c2;
+  background-color: rgba(73, 185, 230, 0.76);
   bottom: 0;
 }
 
@@ -70,6 +70,9 @@ body {
   line-height: 1.39;
   font-size: 18px;
   border-radius: 5px;
+}
+.btn:hover {
+  background-color: #95cfe6;
 }
 
 .info {
