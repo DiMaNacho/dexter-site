@@ -6,9 +6,20 @@ body {
   color: #fff;
 }
 
-.contenedor-fluido {
-  width: 100vw;
+.flex {
   display: flex;
+}
+
+.vcenter {
+  align-items: center;
+}
+
+.hcenter {
+  justify-content: center;
+}
+
+.contenedor-fluido {
+  width: 100%;
   justify-content: center;
 }
 
@@ -20,8 +31,8 @@ body {
 .header {
   height: 60px;
   position: fixed;
-  background-color: rgba(1, 1, 1, 0);
-  z-index: 1;
+  background-color: rgba(3, 163, 228, 0.48);
+  z-index: 3;
 }
 
 .header .contenedor {
@@ -50,12 +61,22 @@ body {
   align-items: center;
 }
 
+.hero .hero-info {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hero .smartphone {
+  z-index: 2;
+}
+
 .hero .hero-footer {
   height: 200px;
   position: absolute;
   width: 100%;
   background-color: rgba(73, 185, 230, 0.76);
   bottom: 0;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -86,7 +107,14 @@ body {
   background-color: #95cfe6;
 }
 
+.btn.btn-share {
+  background-color: red;
+}
+
 .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .info .title {
@@ -101,4 +129,30 @@ body {
   line-height: 1.67;
   letter-spacing: 0.9px;
   margin: 0 0 37px;
+}
+
+.bullets {
+  height: 490px;
+  background-color: #0084b8;
+}
+
+.bullets .contenedor {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.bullets .bullets-item {
+  flex-direction: column;
+}
+
+.bullets .bullets-item.spaceship img {
+  position: relative;
+  top: 4px;
+}
+
+.bullets .bullets-item.bulb img {
+  position: relative;
+  top: -5px;
 }
