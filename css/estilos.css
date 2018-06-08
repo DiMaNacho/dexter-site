@@ -156,3 +156,15 @@ body {
   position: relative;
   top: -5px;
 }
+
+.personajes .contenedor {
+  flex-direction: column;
+}
+
+.personajes .personajes-item {
+  height: 700px;
+}
+
+.personajes .personajes-item .bloque {
+  width: 50%;
+}
